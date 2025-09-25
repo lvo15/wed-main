@@ -18,11 +18,9 @@ in the file
 
 The web servers will run in a Docker container (more on that below). It is possible
 that, if you are using an x86 machine, you *might* not need to run the Docker
-containers within the VM we provided; please feel free to try it out and share
-your successes on Piazza.
+containers within the VM we provided; 
 
-But if you are unable to run the Docker containers outside the VM, then you
-will be using the same QEMU VM that you used for project 1, but this time we
+But if you are unable to run the Docker containers outside the VM, but this time we
 will need to set up a bit more port forwarding, so the command has changed
 somewhat to the following:
 
@@ -35,6 +33,8 @@ the end. This will help make it much easier to work outside of your VM.
 
 Remember to safely `shutdown -h now` your VM before restarting it with the above
 command to start the VM.
+
+
 ## Logging into the VM
 The pre-established user credentials for this VM are:
 
