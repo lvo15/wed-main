@@ -4,6 +4,15 @@ This assignment will explore three different web-based attacks: SQL Injection,
 Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF).
 
 # Getting up and running: QEMU and Docker
+Install QEMU
+This can most easily be done by using brew: 
+
+```bash
+brew install qemu
+```
+This will install multiple different tools to let you emulate different architectures on your Mac; the one we will be using is qemu-system-x86_64
+# Download the QEMU VM
+in the file
 
 ## New options to the QEMU command
 
@@ -26,6 +35,22 @@ the end. This will help make it much easier to work outside of your VM.
 
 Remember to safely `shutdown -h now` your VM before restarting it with the above
 command to start the VM.
+## Logging into the VM
+The pre-established user credentials for this VM are:
+
+```bash
+Username: cmsc414
+Password: cmsc414
+```
+From your terminal (in macOS), you can ssh into the VM with the following command:
+
+```bash
+ssh -p 41422 cmsc414@localhost
+```
+
+This says to log into the VM (running on your local machine on port 41422) as the user cmsc414. This will prompt you for the password; enter cmsc414 (unless you update the password). (You might also want to set up SSH keys to avoid having to enter in passwords.)
+
+If successful, you will see a command prompt starting with cmsc414@cmsc414:~$
 
 ## Docker
 
