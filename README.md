@@ -41,10 +41,13 @@ Accept the defaults for file locations
 ## Copying files into and out of the VM
 From your terminal (in Windows), you can copy files into your VM with the scp command:
 
+```
 scp -P 41422 localFile cmsc414@localhost:
+```
 And you can copy files out of the VM and into your local storage:
-
+```
 scp -P 41422 cmsc414@localhost:remoteFile .
+```
 In both cases, you'll be prompted with the cmsc414 user's password (which is cmsc414).
 
 ## New options to the QEMU command
