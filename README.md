@@ -26,7 +26,7 @@ Once downloaded, open the executable to install. Take note of the Destination Fo
 - Click the OK button to save changes, and then click the OK button again to save and exit the Environment Variables.
 
 
-![Alt text][image-3.png]
+![QEMU](image-3.png)
 
 ## Download the QEMU VM
 in the File
