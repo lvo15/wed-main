@@ -104,7 +104,7 @@ tutorial](https://gitlab.cs.umd.edu/mmarsh/docker-tutorial).
 
 ### Getting and loading docker images
 
-All docker images are available on ELMS in the form of tar files; there's one
+All docker images are available on https://drive.google.com/file/d/1oA7lZtCIZyg0zRwXYXjuWfqMLVQjHHEl/view?usp=drive_link  in the form of tar files; there's one
 for each of the three attacks (sqli.tar, xss.tar, and csrf.tar).
 
 Download these to your computer and then copy them into your QEMU VM. Assuming
