@@ -29,7 +29,14 @@ Once downloaded, open the executable to install. Take note of the Destination Fo
 ![QEMU](image-3.png)
 
 ## Download the QEMU VM
-in the File
+in the https://drive.google.com/file/d/1BZJt8NHf_p1F9wh1RiuyKrSyktPJo97p/view?usp=drive_link
+
+## SSH Key in VM
+It's much easier to work with gitlab from the command line if you set up a key pair. You can create a key pair on the VM with the following command:
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+Accept the defaults for file locations
 
 ## Copying files into and out of the VM
 From your terminal (in Windows), you can copy files into your VM with the scp command:
