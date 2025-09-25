@@ -4,15 +4,41 @@ This assignment will explore three different web-based attacks: SQL Injection,
 Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF).
 
 # Getting up and running: QEMU and Docker
-Install QEMU
+## Install QEMU (MAC M1)
 This can most easily be done by using brew: 
 
 ```bash
 brew install qemu
 ```
 This will install multiple different tools to let you emulate different architectures on your Mac; the one we will be using is qemu-system-x86_64
-# Download the QEMU VM
-in the file
+
+## Install QEMU (Win)
+
+Download the latest QEMU Binaries for Windows (64 bit): https://qemu.weilnetz.de/w64/Links to an external site.
+
+and click "qemu-w64-setup-20231224.exe" to download.
+
+Once downloaded, open the executable to install. Take note of the Destination Folder, which defaults to "C:\Program Files\qemu". After installing, add the QEMU path into Environment Variables by:
+
+- Open File Explorer, right-click This PC / Computer, choose Properties, and then click Advanced system settings.
+- Under the Advanced tab, click Environment Variables.
+- In the User variables box, double-click the Path variable, click New, and then paste the QEMU path.
+- Click the OK button to save changes, and then click the OK button again to save and exit the Environment Variables.
+
+
+![Alt text][image-3.png]
+
+## Download the QEMU VM
+in the File
+
+## Copying files into and out of the VM
+From your terminal (in Windows), you can copy files into your VM with the scp command:
+
+scp -P 41422 localFile cmsc414@localhost:
+And you can copy files out of the VM and into your local storage:
+
+scp -P 41422 cmsc414@localhost:remoteFile .
+In both cases, you'll be prompted with the cmsc414 user's password (which is cmsc414).
 
 ## New options to the QEMU command
 
